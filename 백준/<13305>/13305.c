@@ -2,7 +2,7 @@
 
 int main(){
     long long result = 0; 
-    int distance[100000]; //다시 생각 
+    int distance[100000];
     int n, min, cur; 
     
     scanf("%d",&n); 
@@ -12,7 +12,7 @@ int main(){
     }
     for(int j=0; j<n-1; j++){
         scanf("%d",&cur);  // 리터당 가격 읽기 
-        if (j==0 || min > cur) min = cur; // min에 첫번째 가격 
+        if (j==0 || min > cur) min = cur; // min
         result += (long long)min * distance[j]; 
     }
     
